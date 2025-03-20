@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <style>
+
+        .xyz
+        {
+            background: coral;
+        }
+
+        .abc
+        {
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>[Add-css]</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, optio ab saepe voluptatum facere laborum illum eum rem asperiores officiis similique facilis! Consectetur, animi laudantium!</p>
+
+    <input type="text" value="Attribute Method">
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quasi saepe quam architecto nulla sed placeat! Doloribus sit non deleniti?</h2>
+
+    <script>
+
+        $('h2').css({'background':'coral','color':'#fff'})
+
+        $('input').keypress(function()
+        {
+            $('input').attr('type','button')
+        })
+        
+        $('h2').attr('class','xyz')
+        $('h2').attr('class','abc')
+
+        $('h2').addClass('xyz')
+        $('h2').removeClass('xyz')
+        $('h2').toggleClass('xyz')
+
+        $(document).click(function()
+        {
+            $('p').css('color','blue')
+            $('p').css('height','100px')
+            $('p').css('width','100px')
+            $('p').css('border','2px solid')
+            $('p').css('background-color','#000')
+            $('p').css('font-size','30px')
+            $('p').css('overflow','auto')
+        })
+        
+    </script>
+
+</body>
+</html>

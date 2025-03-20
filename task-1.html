@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1>[Hide]-[Show[-[Hide-Show]</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur corporis voluptatum sint nisi ratione, hic ullam cum ab natus non eum. Facilis quae maiores illo repudiandae itaque rerum aut.</p>
+
+    <button class="t1">Hide</button>
+    <button class="t2">Show</button>
+    <button class="t3">Hide-Show</button>
+
+    <script>
+        
+        p_tag=$('p')
+
+
+        $('.t1').click(function ()
+        {
+            p_tag.hide(2000);
+        })
+
+        $('.t2').click(function ()
+        {
+            p_tag.show(200);
+        })
+
+        $('.t3').click(function()
+        {
+            p_tag.toggle(500);
+        }
+        )
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <style>
+
+        #a1,#a2
+        {
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>[Fade-slide]</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio provident quam cupiditate itaque aperiam eaque delectus consequatur nesciunt ullam rem nam, culpa porro ut. Sed quidem veniam officiis ullam unde.</p>
+
+    <button id="b1">FadeOut</button>
+    <button id="b2">FadeIn</button>
+    <button id="b3">FadeTo</button>
+    <button id="b4">FadeToggle</button>
+
+    <div id="a1">Question</div>
+    <div id="a2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia neque obcaecati fugit rem sit nihil unde, animi debitis accusamus numquam.</div>
+
+
+    <script>
+
+        $('#b1').click(function()
+        {
+            $('p').fadeOut(2500);
+        })
+
+        $('#b2').click(function()
+        {
+            $('p').fadeIn(2500);
+        })
+
+        $('#b3').click(function()
+        {
+            $('p').fadeTo('fast',0.30);
+        })
+
+        $('#b4').click(function()
+        {
+            $('p').fadeToggle(2000);
+        })
+
+        $('#a1').mouseenter(function()
+        {  
+            $('#a2').slideToggle();
+        })
+
+    </script>
+
+</body>
+</html>
