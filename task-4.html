@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        
+        div
+        {
+            background-color: grey;
+            height:150px;
+        }
+
+        p
+        {
+            color: #fff;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <h1>[after-before-append-prepand-empty-remove]</h1>
+
+    <h2>123</h2>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit cumque officia quo similique eum provident consectetur. Dolor, numquam eius.</p>
+    </div>
+
+    <script>
+
+        $('div').remove()
+
+        $('h2').before('<b>this is before</b>')
+
+        $('h2').after('<i>this is after</i>')
+
+        $('h2').append('<u>this is append</u>')
+
+        $('h2').prepend('<b>this is prepend</b>')
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <h1>
+        [filter-not-first-last-eq]
+    </h1>   
+
+    <div>
+
+        <h3>hello 1</h3>
+        <h3>hello 2</h3>
+        <h3>hello 3</h3>
+        <h3>hello 4</h3>
+
+    </div>
+
+    <div>
+        <h2>h2 1</h2>
+
+        <h2 class="z">h2 2</h2>
+
+        <h2>h2 3</h2>
+
+        <h2 class="z">h2 4</h2>
+
+        <h2>h2 5</h2>
+        
+    </div>
+
+    <script>        
+
+        $('h2').css('color','blue')
+
+        $('h2').filter('.z').css('color','coral')
+
+        $('h2').not('.z').css('background','grey')
+
+        $('h2').eq(1).css('color','yellow')
+        
+
+        $(document).click(function()
+        {
+            $('h3').css('color','black')
+            $('h3').first().css('color','goldenrod')
+            $('h3').last().css('color','purple')
+            $('h3').eq(0).css('border','2px solid coral')
+            $('h3').eq(1).css('border','2px solid blue')
+            $('h3').eq(2).css('border','2px solid red')
+            $('h3').eq(3).css('border','2px solid green')
+        })
+
+    </script>
+
+</body>
+</html>

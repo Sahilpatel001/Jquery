@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .x
+        {
+            width:300px;
+            height:300px;
+            background-color:coral;
+        }
+
+        .y
+        {
+            width:300px;
+            height:300px;
+            background-color:green;
+        }
+
+        button
+        {
+            margin:30px 0;
+            padding:10px 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>[animate-css]</h1>
+
+    <div class="x"></div>
+    <button class="a1">css</button>
+    <div class="y"></div>
+    <button class="a2">animate</button>
+
+    <script>
+
+        $('.a1').click(function()
+        {
+            $('.x').css({'margin-left':"200px",'transition':'2s'})
+        })
+
+        $('.a2').click(function()
+        {
+            $('.y').animate({'margin-left':'200px'})
+        })
+
+    </script>
+
+</body>
+</html>
